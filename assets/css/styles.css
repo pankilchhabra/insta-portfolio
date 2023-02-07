@@ -145,11 +145,11 @@ img {
 }
 
 .profile__name{
-  font-size: var(--h2-font-size);
+  font-size: 1.25rem;
 }
 
 .profile__profession{
-  font-size: var(--smaller-font-size);
+  font-size: 1rem;
   font-weight: 500;
   color: var(--text-color);
   margin-bottom: 1rem;
@@ -162,7 +162,8 @@ img {
 }
 
 .profile__social-link{
-  font: 1.25rem;
+  font: 1rem;
+  font-size: 2.25rem;
   color: var(--title-color);
   transition: .3s;
 }
