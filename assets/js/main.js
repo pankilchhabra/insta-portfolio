@@ -5,7 +5,6 @@ const tabs = document.querySelectorAll('[data-target]'),
 tabs.forEach(tab =>{
     tab.addEventListener('click', () =>{
         const target = document.querySelector(tab.dataset.target)
-
         tabContents.forEach(tc => {
             tc.classList.remove('filters__active')
         })
@@ -18,6 +17,25 @@ tabs.forEach(tab =>{
     })
 })
 
+/*=============== Qualification TABS ===============*/
+
+const tabss = document.querySelectorAll('[data-targett]'),
+    tabContentss = document.querySelectorAll('[data-contentt]')
+
+tabss.forEach(taba =>{
+    taba.addEventListener('click', () =>{
+        const targeta = document.querySelector(taba.dataset.targett)
+        tabContentss.forEach(tabContent => {
+            tabContent.classList.remove('qualification__active')
+        })
+        targeta.classList.add('qualification__active')
+
+        tabss.forEach(tabb =>{
+            tabb.classList.remove('qualification__active')
+        })
+        taba.classList.add('qualification__active')
+    })
+})
 
 /*=============== DARK LIGHT THEME ===============*/ 
 const themeButton = document.getElementById('theme-button')
@@ -38,6 +56,7 @@ if (selectedTheme) {
   document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
   themeButton.classList[selectedIcon === 'ri-moon-line' ? 'add' : 'remove'](iconTheme)
 }
+
 
 // Activate / deactivate the theme manually with the button
 themeButton.addEventListener('click', () => {
@@ -66,3 +85,4 @@ sr.reveal('.profile__info-group', {interval:100, delay:700})
 sr.reveal('.profile__buttons', {delay: 800})
 sr.reveal('.filters__content', {delay: 900})
 sr.reveal('.filters', {delay: 1000})
+
