@@ -603,6 +603,12 @@ body.dark-theme{
   margin-bottom: var(--mb-1);
 }
 
+.qualification__grades{
+
+  font-size: var(--smaller-font-size);
+  margin-bottom: var(--mb-1);
+}
+
 .qualification__calendar{
   font-size: var(--smaller-font-size);
   color: var(--text-color-light);
