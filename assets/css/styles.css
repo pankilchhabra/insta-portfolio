@@ -468,6 +468,10 @@ body.dark-theme{
   .skills__box{
     column-gap: 1rem;
   }
+
+  .qualification__data{
+    gap: .5rem;
+  }
 }
 
 
